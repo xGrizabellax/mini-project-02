@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Snippet Cheatsheet</title>
+</head>
+
+<body>
+   <header>
+       <h1>
+           Sam's CSS Cheatsheet
+       </h1>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusamus itaque, delectus fugit dignissimos voluptates consequuntur, enim et praesentium quas aut aperiam, vel iusto sed nostrum perspiciatis? Eum, nemo possimus.
+       </p>
+   </header>
+
+   <main>
+        <section class="card">
+            <h2>Select All
+            </h2>
+
+            <article>
+            <p>Automatically selects and highlights all content on click.
+            </p>
+            </article>
+
+            <div class="snippet">
+            <pre><code>
+        .select {
+            -moz-user-select: all;
+            -webkit-user-select: all;
+            -ms-user-select: all;
+            user-select: all;
+        }
+            </code></pre>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Transition
+            </h2>
+            <article>
+            <p>Use with pseudo code to make small animations when "hovering" or "clicking".
+            </p>
+            </article>
+                <div class="snippet">
+                    <pre>
+        .card {
+            height: 300px
+            transition: height 1s 2s
+        }
+
+        .card {
+            height: 400px
+        }
+                    </pre>
+                </div>
+        </section>
+    
+        <section class="card">
+            <h2>Media Screen
+            </h2>
+            <article>
+            <p>Changes certain rules depending on the width of the screen. Allowing for a smoother user experience no matter what kind of device you are viewing on.
+            </p>
+            </article>
+                <div class="snippet">
+                    <pre><code>
+        @media screen and (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+            header {
+                background: linear-gradient(rgb(2, 75, 0), #8cda34);
+            }
+        }
+                    </code></pre>
+                </div>
+        </section>
+    
+        <section class="card">
+            <h2>Linear Gradient
+            </h2>
+            <article>
+            <p>Allows a the background to incorporate a spectrum between two specific colors.
+            </p>
+            </article>
+                <div class="snippet">
+                    <pre>
+        .linear-gradient {
+            background: linear-gradient(#9D5809, #ad3202);
+        }
+                    </pre>
+                </div>
+        </section>
+    
+
+        <section class="card">
+            <h2>Flexbox Row
+            </h2>
+            <article>
+            <p>Aranges content horizontally from left to right.
+            </p>
+            </article>
+                <div class="snippet">
+        <pre>
+        .row {
+            display: flex; 
+            flex-direction: row
+        }
+        </pre>
+                </div>
+        </section>
+    
+
+        <section class="card">
+            <h2>Overlay Card with Title
+            </h2>
+            <article>
+            <p>Allows title to overlap the border of the container around it.
+            </p>
+            </article>
+                <div class="snippet">
+        <pre>
+        .h2 {
+            position: relative;
+            margin: -20px;
+        }
+        </pre>
+                </div>
+        </section>
+    
+        
+   </main>
+</body>
+
+</html>

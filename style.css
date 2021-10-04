@@ -1,0 +1,131 @@
+body {
+    background: linear-gradient(0.25turn, #315FB0, rgb(241, 241, 131), #315FB0);
+}
+
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background: linear-gradient( #040765, #464CFE);
+    color: rgb(255, 255, 255);
+    font-size: 125%;
+    padding: 20px;
+    border-top: solid 10px rgb(148, 126, 0);
+    border-bottom: solid 15px rgb(148, 126, 0);
+}
+
+h1 {
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 300%;
+    padding: 10px;
+    color: yellow;
+}
+
+main {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.2;
+    padding: 10px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%;
+    border: solid 2px rgb(204, 184, 6);
+    border-radius: 5px;
+    position: relative;
+    margin: -20px;
+    padding: 0 5px 0 5px;
+    background-color: rgb(0, 68, 114);
+    color: white;
+    box-shadow: 2px 2px 10px black;
+}
+
+article {
+    display: flex;
+    align-content: center;
+    margin: 20px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 300px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: solid 8px darkblue;
+    border-radius: 10px;
+    background: linear-gradient(#9D5809, #ad3202);
+    color: white;
+    box-shadow: 10px 10px 10px black;
+    transition: height 3s .5s;
+}
+
+
+.card p {
+    margin: auto 10px;
+}
+
+.snippet {
+    visibility: hidden;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 5px;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 132);
+    color: black;
+    transition: visibility 0s 1.5s;
+}
+
+.card:hover {
+    height: 400px;
+}
+
+.card:hover .snippet {
+    visibility:visible;
+}
+
+.card:hover::after .snippet {
+    visibility: hidden;
+}
+
+pre {
+    font-family: monospace;
+    white-space: pre-wrap;
+    justify-content: flex-start;
+    -moz-user-select: all;
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+    font-size: 80%;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 40%;
+    }
+    header {
+        background: linear-gradient(rgb(107, 2, 2), #F95F5F);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+    header {
+        background: linear-gradient(rgb(2, 75, 0), #8cda34);
+    }
+}
